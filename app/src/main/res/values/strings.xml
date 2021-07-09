@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Sell Me</string>
+    <string name="welcome">Welcome</string>
+    <string name="login">Login</string>
+    <string name="name">Name</string>
+    <string name="enter_name">Enter your name</string>
+    <string name="enter_email">Enter your e-mail</string>
+    <string name="email">E-mail</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm your password</string>
+    <string name="confirm">Confirm Password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="signUp">SignUp</string>
+    <string name="user_name_error_max">Username cannot be greater than 7 characters</string>
+    <string name="vehicles">Vehicles</string>
+    <string name="electronics">Electronics</string>
+    <string name="fashion">Fashion</string>
+    <string name="item">Item</string>
+    <string name="description">Description</string>
+    <string name="logged">Logged in as</string>
+    <string name="logout">Log out</string>
+</resources>

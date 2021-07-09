@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/_20sdp"
+    tools:context=".login.LoginActivity">
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:background="@color/white"
+        android:id="@+id/tab_login_sigUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_15sdp"
+        app:tabBackground="@drawable/tab_color_selector"
+        ></com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:background="@color/white"
+        android:id="@+id/view_pager_login_signUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></androidx.viewpager.widget.ViewPager>
+
+
+</LinearLayout>

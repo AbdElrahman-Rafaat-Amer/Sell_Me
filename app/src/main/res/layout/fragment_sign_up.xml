@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".login.SignUpFragment">
+
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/signUp_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:hint="@string/enter_name"
+        android:inputType="text"
+        android:textColorHighlight="#FFC107"
+        app:met_errorColor="#FF9800"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="@string/name"
+        app:met_floatingLabelTextColor="#FF9800"
+        app:met_maxCharacters="7"
+        app:met_minCharacters="3"
+        app:met_textColorHint="#FFC107"></com.rengwuxian.materialedittext.MaterialEditText>
+
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/signUp_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:hint="@string/enter_email"
+        android:inputType="textEmailAddress"
+        android:textColorHighlight="#FFC107"
+        app:met_errorColor="#FF9800"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="@string/email"
+        app:met_floatingLabelTextColor="#FF9800"
+        app:met_textColorHint="#FFC107"></com.rengwuxian.materialedittext.MaterialEditText>
+
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/signUp_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:hint="@string/enter_password"
+        android:inputType="textPassword"
+        android:textColorHighlight="#FFC107"
+        app:met_errorColor="#FF9800"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="@string/password"
+        app:met_floatingLabelTextColor="#FF9800"
+        app:met_maxCharacters="15"
+        app:met_minCharacters="8"
+        app:met_textColorHint="#FFC107"></com.rengwuxian.materialedittext.MaterialEditText>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/signUp_confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:hint="@string/confirm_password"
+        android:inputType="textPassword"
+        android:textColorHighlight="#FFC107"
+        app:met_errorColor="#FF9800"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="@string/confirm"
+        app:met_floatingLabelTextColor="#FF9800"
+        app:met_maxCharacters="15"
+        app:met_minCharacters="8"
+        app:met_textColorHint="#FFC107"></com.rengwuxian.materialedittext.MaterialEditText>
+
+
+    <Button
+        android:id="@+id/signUp_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/background_edittext"
+        android:text="@string/signUp"
+        android:textAllCaps="false"></Button>
+
+</LinearLayout>

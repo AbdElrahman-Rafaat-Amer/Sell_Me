@@ -1,0 +1,61 @@
+package com.example.abdo.sellme.fashion;
+
+import android.os.Bundle;
+
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import com.example.abdo.sellme.R;
+
+import java.util.ArrayList;
+
+
+public class FashionFragment extends Fragment {
+
+    private RecyclerView recyclerView;
+    private ArrayList<Fashion> list = new ArrayList<>();
+    private FashionAdapter adapter;
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_fashion, container, false);;
+
+
+        recyclerView = view.findViewById(R.id.recycler_fashion);
+        list.add(new Fashion("Item 1", "There is some information about item 1", R.drawable.ic_shopping_bag));
+        list.add(new Fashion("Item 2", "There is some information about item 2", R.drawable.ic_shopping_bag));
+        list.add(new Fashion("Item 3", "There is some information about item 3", R.drawable.ic_shopping_bag));
+        list.add(new Fashion("Item 4", "There is some information about item 4", R.drawable.ic_shopping_bag));
+        list.add(new Fashion("Item 5", "There is some information about item 5", R.drawable.ic_shopping_bag));
+        list.add(new Fashion("Item 6", "There is some information about item 6", R.drawable.ic_shopping_bag));
+        list.add(new Fashion("Item 7", "There is some information about item 7", R.drawable.ic_shopping_bag));
+        list.add(new Fashion("Item 8", "There is some information about item 8", R.drawable.ic_shopping_bag));
+        list.add(new Fashion("Item 9", "There is some information about item 9", R.drawable.ic_shopping_bag));
+        list.add(new Fashion("Item 10", "There is some information about item 10", R.drawable.ic_shopping_bag));
+        list.add(new Fashion("Item 11", "There is some information about item 11", R.drawable.ic_shopping_bag));
+        list.add(new Fashion("Item 12", "There is some information about item 12", R.drawable.ic_shopping_bag));
+        list.add(new Fashion("Item 13", "There is some information about item 13", R.drawable.ic_shopping_bag));
+        list.add(new Fashion("Item 14", "There is some information about item 14", R.drawable.ic_shopping_bag));
+        list.add(new Fashion("Item 15", "There is some information about item 15", R.drawable.ic_shopping_bag));
+        list.add(new Fashion("Item 16", "There is some information about item 16", R.drawable.ic_shopping_bag));
+        list.add(new Fashion("Item 17", "There is some information about item 17", R.drawable.ic_shopping_bag));
+        list.add(new Fashion("Item 18", "There is some information about item 18", R.drawable.ic_shopping_bag));
+        list.add(new Fashion("Item 19", "There is some information about item 19", R.drawable.ic_shopping_bag));
+        list.add(new Fashion("Item 20", "There is some information about item 20", R.drawable.ic_shopping_bag));
+        list.add(new Fashion("Item 21", "There is some information about item 21", R.drawable.ic_shopping_bag));
+
+        adapter = new FashionAdapter(list, getContext());
+        recyclerView.addItemDecoration(new DividerItemDecoration(getContext(),DividerItemDecoration.VERTICAL));
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        recyclerView.setAdapter(adapter);
+
+        return view;
+    }
+}
